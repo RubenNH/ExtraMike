@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Empleados</title>
+</head>
+
+<body>
+    <iframe src="./../navbar.html"
+        onload="this.before((this.contentDocument.body || this. contentDocument).children[0]); this.remove()"></iframe>
+        <h1 class="text-center" style="margin-top:20px; color: rgb(73, 110, 230); font-family: 'Courier New', Courier, monospace; size: 20px;">Empleados</h1>
+        <div class="container">
+            <div class="table-responsive">
+                <table>
+                    <tr>
+                        <td class="col-6">
+                            <div class="row">
+                                <div>
+                                    <div class="card">
+                                        <div class="card-header" style="background-color: black;">
+                                            <div class="row">
+                                                <div class="col-6" style="color:white ;">Devuelve un listado que muestre solamente los empleados que no tienen una oficina asociada.</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <table class="table table-sm table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">ID</th>
+                                                        <th scope="col">nomrbre</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="contenidoUno">
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="col-6">
+                            <div class="row">
+                                <div >
+                                    <div class="card">
+                                        <div class="card-header" style="background-color: black;">
+                                            <div class="row">
+                                                <div class="col-6" style="color:white ;">Devuelve un listado que muestre solamente los empleados que no tienen un cliente asociado.</div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <table class="table table-sm table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">ID</th>
+                                                        <th scope="col">nomrbre</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="contenidoDos">
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+    
+        
+</body>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+    <!-- CAMBIEN AQUI EL JS QUE CORRESPONDA -->
+<script src="./index.js"></script>
+
+</html>
